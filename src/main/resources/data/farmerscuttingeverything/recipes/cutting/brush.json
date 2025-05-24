@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:brush"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

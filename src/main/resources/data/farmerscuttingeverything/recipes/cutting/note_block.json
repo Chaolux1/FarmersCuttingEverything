@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:note_block"
+    }
+  ],
+  "result": [
+    {
+      "count": 8,
+      "item": "minecraft:oak_planks"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

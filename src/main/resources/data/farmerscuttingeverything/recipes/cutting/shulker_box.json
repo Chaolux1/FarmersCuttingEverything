@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:shulker_box"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

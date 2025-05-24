@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:lever"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

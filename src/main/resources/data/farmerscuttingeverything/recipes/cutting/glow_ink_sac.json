@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_ink_sac"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "minecraft:black_dye"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_pickaxe"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "count": 3,
+      "item": "minecraft:diamond"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

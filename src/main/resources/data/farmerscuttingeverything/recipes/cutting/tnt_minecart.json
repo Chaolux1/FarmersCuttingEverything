@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt_minecart"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:minecart"
+    },
+    {
+      "item": "minecraft:tnt"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

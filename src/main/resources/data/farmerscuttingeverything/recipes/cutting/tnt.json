@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:sand"
+    },
+    {
+      "count": 5,
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

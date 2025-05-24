@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:calibrated_sculk_sensor"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:sculk_sensor"
+    },
+    {
+      "count": 3,
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

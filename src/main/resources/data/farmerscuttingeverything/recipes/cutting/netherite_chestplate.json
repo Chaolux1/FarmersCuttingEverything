@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_chestplate"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "chance": 0.75,
+      "count": 8,
+      "item": "minecraft:diamond"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

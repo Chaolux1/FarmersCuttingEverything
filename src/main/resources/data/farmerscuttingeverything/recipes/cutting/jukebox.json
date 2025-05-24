@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:jukebox"
+    }
+  ],
+  "result": [
+    {
+      "count": 8,
+      "item": "minecraft:oak_planks"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:diamond"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

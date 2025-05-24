@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_campfire"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "count": 3,
+      "item": "minecraft:stick"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:spruce_chest_boat"
+    }
+  ],
+  "result": [
+    {
+      "count": 5,
+      "item": "minecraft:spruce_planks"
+    },
+    {
+      "item": "minecraft:chest"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

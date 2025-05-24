@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:campfire"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "chance": 0.5,
+      "count": 2,
+      "item": "minecraft:charcoal"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

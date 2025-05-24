@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_fungus_on_a_stick"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:fishing_rod"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

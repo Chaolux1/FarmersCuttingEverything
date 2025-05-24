@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_gold_ore"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "chance": 0.75,
+      "count": 4,
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "chance": 0.5,
+      "count": 2,
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

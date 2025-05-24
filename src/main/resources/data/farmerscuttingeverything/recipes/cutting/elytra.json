@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:elytra"
+    }
+  ],
+  "result": [
+    {
+      "count": 7,
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

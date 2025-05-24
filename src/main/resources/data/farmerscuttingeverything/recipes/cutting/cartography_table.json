@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:cartography_table"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:dark_oak_planks"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:paper"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

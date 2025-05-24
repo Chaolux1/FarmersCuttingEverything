@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_warped_hyphae"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:warped_planks"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  }
+}

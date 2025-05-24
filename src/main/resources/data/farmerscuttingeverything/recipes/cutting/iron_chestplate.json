@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_chestplate"
+    }
+  ],
+  "result": [
+    {
+      "count": 5,
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.75,
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

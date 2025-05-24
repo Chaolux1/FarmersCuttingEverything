@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "chance": 0.33,
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "chance": 0.33,
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

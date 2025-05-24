@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:powered_rail"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "chance": 0.15,
+      "item": "minecraft:redstone"
+    },
+    {
+      "chance": 0.15,
+      "item": "minecraft:stick"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}
