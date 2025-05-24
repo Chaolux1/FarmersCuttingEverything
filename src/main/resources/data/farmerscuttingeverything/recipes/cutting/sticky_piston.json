@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:sticky_piston"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:piston"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

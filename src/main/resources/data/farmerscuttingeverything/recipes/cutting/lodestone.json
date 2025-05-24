@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:lodestone"
+    }
+  ],
+  "result": [
+    {
+      "count": 8,
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

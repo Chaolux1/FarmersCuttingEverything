@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:end_rod"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

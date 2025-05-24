@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:hopper"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "count": 5,
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

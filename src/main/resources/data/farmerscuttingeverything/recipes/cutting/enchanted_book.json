@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:enchanted_book"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "chance": 0.5,
+      "count": 2,
+      "item": "minecraft:experience_bottle"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:tipped_arrow"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:arrow"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

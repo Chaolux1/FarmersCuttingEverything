@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:tinted_glass"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:glass"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

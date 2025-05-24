@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:rabbit_foot"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

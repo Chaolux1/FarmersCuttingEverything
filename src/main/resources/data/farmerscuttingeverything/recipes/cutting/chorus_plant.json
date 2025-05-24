@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_plant"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "minecraft:purple_dye"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

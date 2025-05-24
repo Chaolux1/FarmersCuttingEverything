@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:firework_rocket"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "chance": 0.75,
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

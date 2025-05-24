@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:piston"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "count": 3,
+      "item": "minecraft:oak_planks"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

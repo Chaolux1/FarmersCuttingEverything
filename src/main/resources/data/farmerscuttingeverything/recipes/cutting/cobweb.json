@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:cobweb"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "chance": 0.75,
+      "item": "minecraft:string"
+    }
+  ],
+  "tool": {
+    "tag": "forge:shears"
+  }
+}

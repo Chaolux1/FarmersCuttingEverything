@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:chainmail_leggings"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:chain"
+    },
+    {
+      "chance": 0.75,
+      "item": "minecraft:chain"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:chain"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:chain"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

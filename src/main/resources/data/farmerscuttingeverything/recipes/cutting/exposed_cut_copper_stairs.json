@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:exposed_cut_copper_stairs"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:exposed_cut_copper"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

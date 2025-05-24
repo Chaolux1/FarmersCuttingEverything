@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:repeater"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "minecraft:stone"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:redstone_torch"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

@@ -7,7 +7,6 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.ToolActions;
 import vectorwing.farmersdelight.common.crafting.ingredient.ToolActionIngredient;
-import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 
@@ -62,7 +61,6 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LAPIS_BLOCK}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.LAPIS_LAZULI, 9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DIAMOND_BLOCK}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.DIAMOND, 9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHERITE_BLOCK}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.NETHERITE_INGOT, 9).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.AMETHYST_BLOCK}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.AMETHYST_SHARD, 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.COPPER_BLOCK}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.COPPER_INGOT, 9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.EXPOSED_COPPER}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.COPPER_INGOT, 9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WEATHERED_COPPER}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.COPPER_INGOT, 9).build(consumer);
@@ -237,7 +235,7 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SUGAR_CANE}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.SUGAR, 2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BOOK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.PAPER, 3).addResult((ItemLike)Items.LEATHER).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ENCHANTED_BOOK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.PAPER, 3).addResult((ItemLike)Items.LEATHER).addResultWithChance(Items.EXPERIENCE_BOTTLE,0.5F,2).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LEATHER}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.RABBIT_FOOT, 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LEATHER}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.RABBIT_HIDE, 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TIPPED_ARROW}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.ARROW).build(consumer);
     }
 
@@ -312,7 +310,7 @@ public class ModCuttingRecipes {
         cuttingFromStone(consumer, Items.NETHER_BRICKS, Items.NETHER_BRICK_STAIRS, Items.NETHER_BRICK_SLAB, Items.NETHER_BRICK_WALL);
         cuttingFromStone(consumer, Items.RED_NETHER_BRICKS, Items.RED_NETHER_BRICK_STAIRS, Items.RED_NETHER_BRICK_SLAB, Items.RED_NETHER_BRICK_WALL);
         cuttingFromStone(consumer, Items.BLACKSTONE, Items.BLACKSTONE_STAIRS, Items.BLACKSTONE_SLAB, Items.BLACKSTONE_WALL);
-        cuttingFromStone(consumer, Items.POLISHED_BLACKSTONE_BRICKS, Items.POLISHED_BLACKSTONE_BRICK_STAIRS, Items.POLISHED_BLACKSTONE_BRICK_SLAB, Items.POLISHED_BLACKSTONE_WALL);
+        cuttingFromStone(consumer, Items.POLISHED_BLACKSTONE_BRICKS, Items.POLISHED_BLACKSTONE_BRICK_STAIRS, Items.POLISHED_BLACKSTONE_BRICK_SLAB, Items.POLISHED_BLACKSTONE_BRICK_WALL);
         cuttingFromStone(consumer, Items.ANDESITE, Items.ANDESITE_STAIRS, Items.ANDESITE_SLAB, Items.ANDESITE_WALL);
         cuttingFromStone(consumer, Items.COBBLESTONE, Items.COBBLESTONE_STAIRS, Items.COBBLESTONE_SLAB, Items.COBBLESTONE_WALL);
         cuttingFromStone(consumer, Items.STONE_BRICKS, Items.STONE_BRICK_STAIRS, Items.STONE_BRICK_SLAB, Items.STONE_BRICK_WALL);
@@ -326,7 +324,7 @@ public class ModCuttingRecipes {
 
     private static void cuttingFromStone(Consumer<FinishedRecipe> consumer,ItemLike stone,ItemLike stairs,ItemLike slab,ItemLike wall) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stairs}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), stone).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{slab}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), stone).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stone}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), slab,2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{wall}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), stone).build(consumer);
     }
 
@@ -359,7 +357,7 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingFromSlabStone(Consumer<FinishedRecipe> consumer,ItemLike stone,ItemLike slab) {
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{slab}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), stone).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stone}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), slab,2).build(consumer);
     }
 
     private static void cuttingWood(Consumer<FinishedRecipe> consumer) {
@@ -378,7 +376,7 @@ public class ModCuttingRecipes {
 
     private static void cuttingFromWood(Consumer<FinishedRecipe> consumer,ItemLike planks,ItemLike stairs,ItemLike slab,ItemLike fence_gate,ItemLike fence,ItemLike button,ItemLike pressure_plate) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stairs}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{slab}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{planks}), new ToolActionIngredient(ToolActions.AXE_DIG), slab,2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{fence_gate}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{fence}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{button}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
@@ -396,10 +394,10 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingColorWool(Consumer<FinishedRecipe> consumer) {
-        cuttingFromColorWool(consumer, Items.WHITE_WOOL, Items.LIGHT_GRAY_WOOL, Items.GRAY_WOOL, Items.BLACK_WOOL, Items.BROWN_WOOL, Items.RED_WOOL, Items.ORANGE_WOOL, Items.YELLOW_WOOL, Items.LIME_WOOL, Items.GRAY_WOOL, Items.CYAN_WOOL, Items.LIGHT_BLUE_WOOL, Items.BLUE_WOOL, Items.PURPLE_CANDLE, Items.MAGENTA_WOOL, Items.PINK_WOOL);
-        cuttingFromColorWool(consumer, Items.WHITE_BED, Items.LIGHT_GRAY_BED, Items.GRAY_BED, Items.BLACK_BED, Items.BROWN_BED, Items.RED_BED, Items.ORANGE_BED, Items.YELLOW_BED, Items.LIME_BED, Items.GRAY_BED, Items.CYAN_BED, Items.LIGHT_BLUE_BED, Items.BLUE_BED, Items.PURPLE_CANDLE, Items.MAGENTA_BED, Items.PINK_BED);
-        cuttingFromColorWool(consumer, Items.WHITE_CARPET, Items.LIGHT_GRAY_CARPET, Items.GRAY_CARPET, Items.BLACK_CARPET, Items.BROWN_CARPET, Items.RED_CARPET, Items.ORANGE_CARPET, Items.YELLOW_CARPET, Items.LIME_CARPET, Items.GRAY_CARPET, Items.CYAN_CARPET, Items.LIGHT_BLUE_CARPET, Items.BLUE_CARPET, Items.PURPLE_CANDLE, Items.MAGENTA_CARPET, Items.PINK_CARPET);
-        cuttingFromColorWool(consumer, Items.WHITE_BANNER, Items.LIGHT_GRAY_BANNER, Items.GRAY_BANNER, Items.BLACK_BANNER, Items.BROWN_BANNER, Items.RED_BANNER, Items.ORANGE_BANNER, Items.YELLOW_BANNER, Items.LIME_BANNER, Items.GRAY_BANNER, Items.CYAN_BANNER, Items.LIGHT_BLUE_BANNER, Items.BLUE_BANNER, Items.PURPLE_CANDLE, Items.MAGENTA_BANNER, Items.PINK_BANNER);
+        cuttingFromColorWool(consumer, Items.WHITE_WOOL, Items.LIGHT_GRAY_WOOL, Items.GRAY_WOOL, Items.BLACK_WOOL, Items.BROWN_WOOL, Items.RED_WOOL, Items.ORANGE_WOOL, Items.YELLOW_WOOL, Items.LIME_WOOL, Items.GREEN_WOOL, Items.CYAN_WOOL, Items.LIGHT_BLUE_WOOL, Items.BLUE_WOOL, Items.PURPLE_WOOL, Items.MAGENTA_WOOL, Items.PINK_WOOL);
+        cuttingFromColorWool(consumer, Items.WHITE_BED, Items.LIGHT_GRAY_BED, Items.GRAY_BED, Items.BLACK_BED, Items.BROWN_BED, Items.RED_BED, Items.ORANGE_BED, Items.YELLOW_BED, Items.LIME_BED, Items.GREEN_BED, Items.CYAN_BED, Items.LIGHT_BLUE_BED, Items.BLUE_BED, Items.PURPLE_BED, Items.MAGENTA_BED, Items.PINK_BED);
+        cuttingFromColorWool(consumer, Items.WHITE_CARPET, Items.LIGHT_GRAY_CARPET, Items.GRAY_CARPET, Items.BLACK_CARPET, Items.BROWN_CARPET, Items.RED_CARPET, Items.ORANGE_CARPET, Items.YELLOW_CARPET, Items.LIME_CARPET, Items.GREEN_CARPET, Items.CYAN_CARPET, Items.LIGHT_BLUE_CARPET, Items.BLUE_CARPET, Items.PURPLE_CARPET, Items.MAGENTA_CARPET, Items.PINK_CARPET);
+        cuttingFromColorWool(consumer, Items.WHITE_BANNER, Items.LIGHT_GRAY_BANNER, Items.GRAY_BANNER, Items.BLACK_BANNER, Items.BROWN_BANNER, Items.RED_BANNER, Items.ORANGE_BANNER, Items.YELLOW_BANNER, Items.LIME_BANNER, Items.GREEN_BANNER, Items.CYAN_BANNER, Items.LIGHT_BLUE_BANNER, Items.BLUE_BANNER, Items.PURPLE_BANNER, Items.MAGENTA_BANNER, Items.PINK_BANNER);
     }
 
     private static void cuttingFromColorWool(Consumer<FinishedRecipe> consumer,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {
@@ -422,8 +420,8 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingColorConcrete(Consumer<FinishedRecipe> consumer) {
-        cuttingFromColorConcrete(consumer, Items.WHITE_CONCRETE, Items.LIGHT_GRAY_CONCRETE, Items.GRAY_CONCRETE, Items.BLACK_CONCRETE, Items.BROWN_CONCRETE, Items.RED_CONCRETE, Items.ORANGE_CONCRETE, Items.YELLOW_CONCRETE, Items.LIME_CONCRETE, Items.GRAY_CONCRETE, Items.CYAN_CONCRETE, Items.LIGHT_BLUE_CONCRETE, Items.BLUE_CONCRETE, Items.PURPLE_CANDLE, Items.MAGENTA_CONCRETE, Items.PINK_CONCRETE);
-        cuttingFromColorConcrete(consumer, Items.WHITE_CONCRETE_POWDER, Items.LIGHT_GRAY_CONCRETE_POWDER, Items.GRAY_CONCRETE_POWDER, Items.BLACK_CONCRETE_POWDER, Items.BROWN_CONCRETE_POWDER, Items.RED_CONCRETE_POWDER, Items.ORANGE_CONCRETE_POWDER, Items.YELLOW_CONCRETE_POWDER, Items.LIME_CONCRETE_POWDER, Items.GRAY_CONCRETE_POWDER, Items.CYAN_CONCRETE_POWDER, Items.LIGHT_BLUE_CONCRETE_POWDER, Items.BLUE_CONCRETE_POWDER, Items.PURPLE_CANDLE, Items.MAGENTA_CONCRETE_POWDER, Items.PINK_CONCRETE_POWDER);
+        cuttingFromColorConcrete(consumer, Items.WHITE_CONCRETE, Items.LIGHT_GRAY_CONCRETE, Items.GRAY_CONCRETE, Items.BLACK_CONCRETE, Items.BROWN_CONCRETE, Items.RED_CONCRETE, Items.ORANGE_CONCRETE, Items.YELLOW_CONCRETE, Items.LIME_CONCRETE, Items.GREEN_CONCRETE, Items.CYAN_CONCRETE, Items.LIGHT_BLUE_CONCRETE, Items.BLUE_CONCRETE, Items.PURPLE_CONCRETE, Items.MAGENTA_CONCRETE, Items.PINK_CONCRETE);
+        cuttingFromColorConcrete(consumer, Items.WHITE_CONCRETE_POWDER, Items.LIGHT_GRAY_CONCRETE_POWDER, Items.GRAY_CONCRETE_POWDER, Items.BLACK_CONCRETE_POWDER, Items.BROWN_CONCRETE_POWDER, Items.RED_CONCRETE_POWDER, Items.ORANGE_CONCRETE_POWDER, Items.YELLOW_CONCRETE_POWDER, Items.LIME_CONCRETE_POWDER, Items.GREEN_CONCRETE_POWDER, Items.CYAN_CONCRETE_POWDER, Items.LIGHT_BLUE_CONCRETE_POWDER, Items.BLUE_CONCRETE_POWDER, Items.PURPLE_CONCRETE_POWDER, Items.MAGENTA_CONCRETE_POWDER, Items.PINK_CONCRETE_POWDER);
     }
 
     private static void cuttingFromColorConcrete(Consumer<FinishedRecipe> consumer,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {
@@ -446,7 +444,7 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingColorGlassPane(Consumer<FinishedRecipe> consumer) {
-        cuttingFromColorGlassPane(consumer, Items.WHITE_STAINED_GLASS_PANE, Items.LIGHT_GRAY_STAINED_GLASS_PANE, Items.GRAY_STAINED_GLASS_PANE, Items.BLACK_STAINED_GLASS_PANE, Items.BROWN_STAINED_GLASS_PANE, Items.RED_STAINED_GLASS_PANE, Items.ORANGE_STAINED_GLASS_PANE, Items.YELLOW_STAINED_GLASS_PANE, Items.LIME_STAINED_GLASS_PANE, Items.GRAY_STAINED_GLASS_PANE, Items.CYAN_STAINED_GLASS_PANE, Items.LIGHT_BLUE_STAINED_GLASS_PANE, Items.BLUE_STAINED_GLASS_PANE, Items.PURPLE_CANDLE, Items.MAGENTA_STAINED_GLASS_PANE, Items.PINK_STAINED_GLASS_PANE);
+        cuttingFromColorGlassPane(consumer, Items.WHITE_STAINED_GLASS_PANE, Items.LIGHT_GRAY_STAINED_GLASS_PANE, Items.GRAY_STAINED_GLASS_PANE, Items.BLACK_STAINED_GLASS_PANE, Items.BROWN_STAINED_GLASS_PANE, Items.RED_STAINED_GLASS_PANE, Items.ORANGE_STAINED_GLASS_PANE, Items.YELLOW_STAINED_GLASS_PANE, Items.LIME_STAINED_GLASS_PANE, Items.GREEN_STAINED_GLASS_PANE, Items.CYAN_STAINED_GLASS_PANE, Items.LIGHT_BLUE_STAINED_GLASS_PANE, Items.BLUE_STAINED_GLASS_PANE, Items.PURPLE_STAINED_GLASS_PANE, Items.MAGENTA_STAINED_GLASS_PANE, Items.PINK_STAINED_GLASS_PANE);
     }
 
     private static void cuttingFromColorGlassPane(Consumer<FinishedRecipe> consumer,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {
@@ -469,7 +467,7 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingColorGlass(Consumer<FinishedRecipe> consumer) {
-        cuttingFromColorGlass(consumer, Items.WHITE_STAINED_GLASS, Items.LIGHT_GRAY_STAINED_GLASS, Items.GRAY_STAINED_GLASS, Items.BLACK_STAINED_GLASS, Items.BROWN_STAINED_GLASS, Items.RED_STAINED_GLASS, Items.ORANGE_STAINED_GLASS, Items.YELLOW_STAINED_GLASS, Items.LIME_STAINED_GLASS, Items.GRAY_STAINED_GLASS, Items.CYAN_STAINED_GLASS, Items.LIGHT_BLUE_STAINED_GLASS, Items.BLUE_STAINED_GLASS, Items.PURPLE_CANDLE, Items.MAGENTA_STAINED_GLASS, Items.PINK_STAINED_GLASS);
+        cuttingFromColorGlass(consumer, Items.WHITE_STAINED_GLASS, Items.LIGHT_GRAY_STAINED_GLASS, Items.GRAY_STAINED_GLASS, Items.BLACK_STAINED_GLASS, Items.BROWN_STAINED_GLASS, Items.RED_STAINED_GLASS, Items.ORANGE_STAINED_GLASS, Items.YELLOW_STAINED_GLASS, Items.LIME_STAINED_GLASS, Items.GREEN_STAINED_GLASS, Items.CYAN_STAINED_GLASS, Items.LIGHT_BLUE_STAINED_GLASS, Items.BLUE_STAINED_GLASS, Items.PURPLE_STAINED_GLASS, Items.MAGENTA_STAINED_GLASS, Items.PINK_STAINED_GLASS);
     }
 
     private static void cuttingFromColorGlass(Consumer<FinishedRecipe> consumer,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {
@@ -492,8 +490,8 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingColorTerra(Consumer<FinishedRecipe> consumer) {
-        cuttingFromColorTerra(consumer, Items.WHITE_GLAZED_TERRACOTTA, Items.LIGHT_GRAY_GLAZED_TERRACOTTA, Items.GRAY_GLAZED_TERRACOTTA, Items.BLACK_GLAZED_TERRACOTTA, Items.BROWN_GLAZED_TERRACOTTA, Items.RED_GLAZED_TERRACOTTA, Items.ORANGE_GLAZED_TERRACOTTA, Items.YELLOW_GLAZED_TERRACOTTA, Items.LIME_GLAZED_TERRACOTTA, Items.GRAY_GLAZED_TERRACOTTA, Items.CYAN_GLAZED_TERRACOTTA, Items.LIGHT_BLUE_GLAZED_TERRACOTTA, Items.BLUE_GLAZED_TERRACOTTA, Items.PURPLE_CANDLE, Items.MAGENTA_GLAZED_TERRACOTTA, Items.PINK_GLAZED_TERRACOTTA);
-        cuttingFromColorTerra(consumer, Items.WHITE_TERRACOTTA, Items.LIGHT_GRAY_TERRACOTTA, Items.GRAY_TERRACOTTA, Items.BLACK_TERRACOTTA, Items.BROWN_TERRACOTTA, Items.RED_TERRACOTTA, Items.ORANGE_TERRACOTTA, Items.YELLOW_TERRACOTTA, Items.LIME_TERRACOTTA, Items.GRAY_TERRACOTTA, Items.CYAN_TERRACOTTA, Items.LIGHT_BLUE_TERRACOTTA, Items.BLUE_TERRACOTTA, Items.PURPLE_CANDLE, Items.MAGENTA_TERRACOTTA, Items.PINK_TERRACOTTA);    }
+        cuttingFromColorTerra(consumer, Items.WHITE_GLAZED_TERRACOTTA, Items.LIGHT_GRAY_GLAZED_TERRACOTTA, Items.GRAY_GLAZED_TERRACOTTA, Items.BLACK_GLAZED_TERRACOTTA, Items.BROWN_GLAZED_TERRACOTTA, Items.RED_GLAZED_TERRACOTTA, Items.ORANGE_GLAZED_TERRACOTTA, Items.YELLOW_GLAZED_TERRACOTTA, Items.LIME_GLAZED_TERRACOTTA, Items.GREEN_GLAZED_TERRACOTTA, Items.CYAN_GLAZED_TERRACOTTA, Items.LIGHT_BLUE_GLAZED_TERRACOTTA, Items.BLUE_GLAZED_TERRACOTTA, Items.PURPLE_GLAZED_TERRACOTTA, Items.MAGENTA_GLAZED_TERRACOTTA, Items.PINK_GLAZED_TERRACOTTA);
+        cuttingFromColorTerra(consumer, Items.WHITE_TERRACOTTA, Items.LIGHT_GRAY_TERRACOTTA, Items.GRAY_TERRACOTTA, Items.BLACK_TERRACOTTA, Items.BROWN_TERRACOTTA, Items.RED_TERRACOTTA, Items.ORANGE_TERRACOTTA, Items.YELLOW_TERRACOTTA, Items.LIME_TERRACOTTA, Items.GREEN_TERRACOTTA, Items.CYAN_TERRACOTTA, Items.LIGHT_BLUE_TERRACOTTA, Items.BLUE_TERRACOTTA, Items.PURPLE_TERRACOTTA, Items.MAGENTA_TERRACOTTA, Items.PINK_TERRACOTTA);    }
 
     private static void cuttingFromColorTerra(Consumer<FinishedRecipe> consumer,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{white}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.CLAY).build(consumer);
@@ -516,7 +514,7 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingBoxColor(Consumer<FinishedRecipe> consumer) {
-        cuttingFromBoxColor(consumer, Items.CANDLE, Items.WHITE_CANDLE, Items.LIGHT_GRAY_CANDLE, Items.GRAY_CANDLE, Items.BLACK_CANDLE, Items.BROWN_CANDLE, Items.RED_CANDLE, Items.ORANGE_CANDLE, Items.YELLOW_CANDLE, Items.LIME_CANDLE, Items.GRAY_CANDLE, Items.CYAN_CANDLE, Items.LIGHT_BLUE_CANDLE, Items.BLUE_CANDLE, Items.PURPLE_CANDLE, Items.MAGENTA_CANDLE, Items.PINK_CANDLE);
+        cuttingFromBoxColor(consumer, Items.CANDLE, Items.WHITE_CANDLE, Items.LIGHT_GRAY_CANDLE, Items.GRAY_CANDLE, Items.BLACK_CANDLE, Items.BROWN_CANDLE, Items.RED_CANDLE, Items.ORANGE_CANDLE, Items.YELLOW_CANDLE, Items.LIME_CANDLE, Items.GREEN_CANDLE, Items.CYAN_CANDLE, Items.LIGHT_BLUE_CANDLE, Items.BLUE_CANDLE, Items.PURPLE_CANDLE, Items.MAGENTA_CANDLE, Items.PINK_CANDLE);
     }
 
     private static void cuttingFromBoxColor(Consumer<FinishedRecipe> consumer,ItemLike standart,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {
@@ -539,7 +537,7 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingCandleColor(Consumer<FinishedRecipe> consumer) {
-        cuttingFromCandleColor(consumer, Items.SHULKER_BOX, Items.WHITE_SHULKER_BOX, Items.LIGHT_GRAY_SHULKER_BOX, Items.GRAY_SHULKER_BOX, Items.BLACK_SHULKER_BOX, Items.BROWN_SHULKER_BOX, Items.RED_SHULKER_BOX, Items.ORANGE_SHULKER_BOX, Items.YELLOW_SHULKER_BOX, Items.LIME_SHULKER_BOX, Items.GRAY_SHULKER_BOX, Items.CYAN_SHULKER_BOX, Items.LIGHT_BLUE_SHULKER_BOX, Items.BLUE_SHULKER_BOX, Items.PURPLE_SHULKER_BOX, Items.MAGENTA_SHULKER_BOX, Items.PINK_SHULKER_BOX);
+        cuttingFromCandleColor(consumer, Items.SHULKER_BOX, Items.WHITE_SHULKER_BOX, Items.LIGHT_GRAY_SHULKER_BOX, Items.GRAY_SHULKER_BOX, Items.BLACK_SHULKER_BOX, Items.BROWN_SHULKER_BOX, Items.RED_SHULKER_BOX, Items.ORANGE_SHULKER_BOX, Items.YELLOW_SHULKER_BOX, Items.LIME_SHULKER_BOX, Items.GREEN_SHULKER_BOX, Items.CYAN_SHULKER_BOX, Items.LIGHT_BLUE_SHULKER_BOX, Items.BLUE_SHULKER_BOX, Items.PURPLE_SHULKER_BOX, Items.MAGENTA_SHULKER_BOX, Items.PINK_SHULKER_BOX);
     }
 
     private static void cuttingFromCandleColor(Consumer<FinishedRecipe> consumer,ItemLike standart,ItemLike white,ItemLike light_gray,ItemLike gray,ItemLike black,ItemLike brown,ItemLike red,ItemLike orange,ItemLike yellow,ItemLike lime,ItemLike green,ItemLike cyan,ItemLike light_blue,ItemLike blue,ItemLike purple,ItemLike magenta,ItemLike pink) {

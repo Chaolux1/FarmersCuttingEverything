@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:fishing_rod"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "minecraft:stick"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:string"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

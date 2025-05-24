@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:blast_furnace"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:furnace"
+    },
+    {
+      "count": 5,
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "count": 3,
+      "item": "minecraft:smooth_stone"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:map"
+    }
+  ],
+  "result": [
+    {
+      "count": 8,
+      "item": "minecraft:paper"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
