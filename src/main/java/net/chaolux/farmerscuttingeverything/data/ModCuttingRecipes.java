@@ -33,11 +33,12 @@ public class ModCuttingRecipes {
         cuttingStoneButton(consumer);
         cuttingTools(consumer);
         cuttingArmor(consumer);
+        cuttingBoat(consumer);
+        cuttingOre(consumer);
     }
 
     private static void cuttingPickaxe(Consumer<FinishedRecipe> consumer) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSSY_COBBLESTONE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.COBBLESTONE).addResult((ItemLike)Items.VINE).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.STONE_BRICKS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.STONE).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SMOOTH_STONE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.STONE).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSSY_STONE_BRICKS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.STONE_BRICKS).addResult((ItemLike)Items.VINE).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GRANITE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.DIORITE).addResultWithChance(Items.QUARTZ,0.5F).build(consumer);
@@ -150,6 +151,36 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PURPUR_PILLAR}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.PURPUR_SLAB, 2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LIGHT_WEIGHTED_PRESSURE_PLATE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.GOLD_INGOT, 2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HEAVY_WEIGHTED_PRESSURE_PLATE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.IRON_INGOT, 2).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.QUARTZ_BRICKS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.QUARTZ_BLOCK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.QUARTZ_PILLAR}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.QUARTZ_BLOCK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.CRIMSON_NYLIUM}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.NETHERRACK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WARPED_NYLIUM}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.NETHERRACK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SHULKER_BOX}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.CHEST).addResult((ItemLike)Items.SHULKER_SHELL,2).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GLASS_BOTTLE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.GLASS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHERITE_INGOT}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.NETHERITE_SCRAP,4).addResultWithChance(Items.GOLD_INGOT,0.9F,4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GOLDEN_APPLE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.APPLE).addResult((ItemLike)Items.GOLD_INGOT,8).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ENCHANTED_GOLDEN_APPLE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.APPLE).addResult((ItemLike)Items.GOLD_BLOCK,8).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.CALIBRATED_SCULK_SENSOR}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.SCULK_SENSOR).addResult((ItemLike)Items.AMETHYST_SHARD,3).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHER_GOLD_ORE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.GOLD_NUGGET,2).addResultWithChance(Items.GOLD_NUGGET,0.75F,4).addResultWithChance(Items.GOLD_INGOT,0.5F,2).addResultWithChance(Items.NETHERRACK,0.25F).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHER_QUARTZ_ORE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.QUARTZ).addResultWithChance(Items.QUARTZ,0.75F).addResultWithChance(Items.QUARTZ,0.5F).addResultWithChance(Items.NETHERRACK,0.25F).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSSY_COBBLESTONE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.MOSSY_COBBLESTONE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSSY_COBBLESTONE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.MOSSY_COBBLESTONE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSSY_STONE_BRICK_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.MOSSY_STONE_BRICKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSSY_STONE_BRICK_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.MOSSY_STONE_BRICKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GRANITE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.GRANITE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GRANITE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.GRANITE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DIORITE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.DIORITE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DIORITE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.DIORITE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ANDESITE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.ANDESITE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ANDESITE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.ANDESITE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.RED_SANDSTONE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.RED_SANDSTONE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.RED_SANDSTONE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.RED_SANDSTONE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SANDSTONE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.SANDSTONE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SANDSTONE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.SANDSTONE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PRISMARINE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.PRISMARINE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PRISMARINE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.PRISMARINE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DARK_PRISMARINE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.DARK_PRISMARINE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PURPUR_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.PURPUR_BLOCK).build(consumer);
     }
 
     private static void cuttingAxe(Consumer<FinishedRecipe> consumer) {
@@ -185,6 +216,15 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SOUL_TORCH}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.STICK).addResultWithChance(Items.COAL,0.25F).addResultWithChance(Items.SOUL_SAND,0.25F).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ARROW}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.STICK).addResultWithChance(Items.FLINT,0.25F).addResultWithChance(Items.FEATHER,0.25F).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SPECTRAL_ARROW}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.GLOWSTONE_DUST, 2).addResultWithChance(Items.ARROW,0.95F).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BAMBOO_STAIRS}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.BAMBOO_PLANKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BAMBOO_PLANKS}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.BAMBOO_SLAB,2).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BAMBOO_FENCE_GATE}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.BAMBOO_PLANKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BAMBOO_FENCE}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.BAMBOO_PLANKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BAMBOO_BUTTON}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.BAMBOO_PLANKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BAMBOO_PRESSURE_PLATE}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.BAMBOO_PLANKS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SOUL_CAMPFIRE}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.SOUL_SAND).addResult((ItemLike)Items.STICK,3).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TRAPPED_CHEST}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.CHEST).addResult((ItemLike)Items.TRIPWIRE_HOOK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.CRAFTING_TABLE}), new ToolActionIngredient(ToolActions.AXE_DIG), Items.OAK_PLANKS,4).build(consumer);
     }
 
     private static void cuttingShovel(Consumer<FinishedRecipe> consumer) {
@@ -192,6 +232,9 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.COARSE_DIRT}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).addResultWithChance(Items.GRAVEL,0.5F).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MOSS_BLOCK}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.MOSS_CARPET).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SNOW_BLOCK}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.SNOWBALL, 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GRASS_BLOCK}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PODZOL}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MYCELIUM}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
     }
 
     private static void cuttingShears(Consumer<FinishedRecipe> consumer) {
@@ -237,6 +280,8 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ENCHANTED_BOOK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.PAPER, 3).addResult((ItemLike)Items.LEATHER).addResultWithChance(Items.EXPERIENCE_BOTTLE,0.5F,2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LEATHER}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.RABBIT_HIDE, 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TIPPED_ARROW}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.ARROW).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HONEYCOMB_BLOCK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.HONEYCOMB,4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GLOW_INK_SAC}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.BLACK_DYE,2).addResultWithChance(Items.GLOWSTONE_DUST,0.1F).build(consumer);
     }
 
     private static void cuttingTools(Consumer<FinishedRecipe> consumer) {
@@ -300,26 +345,18 @@ public class ModCuttingRecipes {
     private static void cuttingStone(Consumer<FinishedRecipe> consumer) {
         cuttingFromStone(consumer, Items.POLISHED_BLACKSTONE, Items.POLISHED_BLACKSTONE_STAIRS, Items.POLISHED_BLACKSTONE_SLAB, Items.POLISHED_BLACKSTONE_WALL);
         cuttingFromStone(consumer, Items.END_STONE_BRICKS, Items.END_STONE_BRICK_STAIRS, Items.END_STONE_BRICK_SLAB, Items.END_STONE_BRICK_WALL);
-        cuttingFromStone(consumer, Items.MOSSY_COBBLESTONE, Items.MOSSY_COBBLESTONE_STAIRS, Items.MOSSY_COBBLESTONE_SLAB, Items.MOSSY_COBBLESTONE_WALL);
-        cuttingFromStone(consumer, Items.MOSSY_STONE_BRICKS, Items.MOSSY_STONE_BRICK_STAIRS, Items.MOSSY_STONE_BRICK_SLAB, Items.MOSSY_STONE_BRICK_WALL);
-        cuttingFromStone(consumer, Items.GRANITE, Items.GRANITE_STAIRS, Items.GRANITE_SLAB, Items.GRANITE_WALL);
-        cuttingFromStone(consumer, Items.DIORITE, Items.DIORITE_STAIRS, Items.DIORITE_SLAB, Items.DIORITE_WALL);
         cuttingFromStone(consumer, Items.POLISHED_DEEPSLATE, Items.POLISHED_DEEPSLATE_STAIRS, Items.POLISHED_DEEPSLATE_SLAB, Items.POLISHED_DEEPSLATE_WALL);
         cuttingFromStone(consumer, Items.MUD_BRICKS, Items.MUD_BRICK_STAIRS, Items.MUD_BRICK_SLAB, Items.MUD_BRICK_WALL);
-        cuttingFromStone(consumer, Items.RED_SANDSTONE, Items.RED_SANDSTONE_STAIRS, Items.RED_SANDSTONE_SLAB, Items.RED_SANDSTONE_WALL);
         cuttingFromStone(consumer, Items.NETHER_BRICKS, Items.NETHER_BRICK_STAIRS, Items.NETHER_BRICK_SLAB, Items.NETHER_BRICK_WALL);
         cuttingFromStone(consumer, Items.RED_NETHER_BRICKS, Items.RED_NETHER_BRICK_STAIRS, Items.RED_NETHER_BRICK_SLAB, Items.RED_NETHER_BRICK_WALL);
         cuttingFromStone(consumer, Items.BLACKSTONE, Items.BLACKSTONE_STAIRS, Items.BLACKSTONE_SLAB, Items.BLACKSTONE_WALL);
         cuttingFromStone(consumer, Items.POLISHED_BLACKSTONE_BRICKS, Items.POLISHED_BLACKSTONE_BRICK_STAIRS, Items.POLISHED_BLACKSTONE_BRICK_SLAB, Items.POLISHED_BLACKSTONE_BRICK_WALL);
-        cuttingFromStone(consumer, Items.ANDESITE, Items.ANDESITE_STAIRS, Items.ANDESITE_SLAB, Items.ANDESITE_WALL);
         cuttingFromStone(consumer, Items.COBBLESTONE, Items.COBBLESTONE_STAIRS, Items.COBBLESTONE_SLAB, Items.COBBLESTONE_WALL);
         cuttingFromStone(consumer, Items.STONE_BRICKS, Items.STONE_BRICK_STAIRS, Items.STONE_BRICK_SLAB, Items.STONE_BRICK_WALL);
         cuttingFromStone(consumer, Items.DEEPSLATE_BRICKS, Items.DEEPSLATE_BRICK_STAIRS, Items.DEEPSLATE_BRICK_SLAB, Items.DEEPSLATE_BRICK_WALL);
         cuttingFromStone(consumer, Items.COBBLED_DEEPSLATE, Items.COBBLED_DEEPSLATE_STAIRS, Items.COBBLED_DEEPSLATE_SLAB, Items.COBBLED_DEEPSLATE_WALL);
         cuttingFromStone(consumer, Items.DEEPSLATE_TILES, Items.DEEPSLATE_TILE_STAIRS, Items.DEEPSLATE_TILE_SLAB, Items.DEEPSLATE_TILE_WALL);
-        cuttingFromStone(consumer, Items.SANDSTONE, Items.SANDSTONE_STAIRS, Items.SANDSTONE_SLAB, Items.SANDSTONE_WALL);
         cuttingFromStone(consumer, Items.BRICKS, Items.BRICK_STAIRS, Items.BRICK_SLAB, Items.BRICK_WALL);
-        cuttingFromStone(consumer, Items.PRISMARINE, Items.PRISMARINE_STAIRS, Items.PRISMARINE_SLAB, Items.PRISMARINE_WALL);
     }
 
     private static void cuttingFromStone(Consumer<FinishedRecipe> consumer,ItemLike stone,ItemLike stairs,ItemLike slab,ItemLike wall) {
@@ -334,12 +371,9 @@ public class ModCuttingRecipes {
         cuttingFromMiniStone(consumer, Items.SMOOTH_RED_SANDSTONE, Items.SMOOTH_RED_SANDSTONE_STAIRS, Items.SMOOTH_RED_SANDSTONE_SLAB);
         cuttingFromMiniStone(consumer, Items.SMOOTH_QUARTZ, Items.SMOOTH_QUARTZ_STAIRS, Items.SMOOTH_QUARTZ_SLAB);
         cuttingFromMiniStone(consumer, Items.POLISHED_GRANITE, Items.POLISHED_GRANITE_STAIRS, Items.POLISHED_GRANITE_SLAB);
-        cuttingFromMiniStone(consumer, Items.DARK_PRISMARINE, Items.DARK_PRISMARINE_STAIRS, Items.DARK_PRISMARINE_SLAB);
         cuttingFromMiniStone(consumer, Items.POLISHED_DIORITE, Items.POLISHED_DIORITE_STAIRS, Items.POLISHED_DIORITE_SLAB);
-        cuttingFromMiniStone(consumer, Items.PRISMARINE_BRICKS, Items.PRISMARINE_BRICK_STAIRS, Items.PRISMARINE_BRICK_SLAB);
         cuttingFromMiniStone(consumer, Items.POLISHED_ANDESITE, Items.POLISHED_ANDESITE_STAIRS, Items.POLISHED_ANDESITE_SLAB);
         cuttingFromMiniStone(consumer, Items.SMOOTH_SANDSTONE, Items.SMOOTH_SANDSTONE_STAIRS, Items.SMOOTH_SANDSTONE_SLAB);
-        cuttingFromMiniStone(consumer, Items.PURPUR_BLOCK, Items.PURPUR_STAIRS, Items.PURPUR_SLAB);
         cuttingFromMiniStone(consumer, Items.CUT_COPPER, Items.CUT_COPPER_STAIRS, Items.CUT_COPPER_SLAB);
         cuttingFromMiniStone(consumer, Items.EXPOSED_CUT_COPPER, Items.EXPOSED_CUT_COPPER_STAIRS, Items.EXPOSED_CUT_COPPER_SLAB);
         cuttingFromMiniStone(consumer, Items.WEATHERED_CUT_COPPER, Items.WEATHERED_CUT_COPPER_STAIRS, Items.WEATHERED_CUT_COPPER_SLAB);
@@ -348,12 +382,13 @@ public class ModCuttingRecipes {
 
     private static void cuttingFromMiniStone(Consumer<FinishedRecipe> consumer,ItemLike stone,ItemLike stairs,ItemLike slab) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stairs}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), stone).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{slab}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), stone).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stone}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), slab,2).build(consumer);
     }
 
     private static void cuttingSlabStone(Consumer<FinishedRecipe> consumer) {
         cuttingFromSlabStone(consumer, Items.CUT_RED_SANDSTONE, Items.CUT_RED_SANDSTONE_SLAB);
-        cuttingFromSlabStone(consumer, Items.SMOOTH_STONE, Items.SMOOTH_STONE_SLAB);
+        cuttingFromSlabStone(consumer, Items.CHISELED_QUARTZ_BLOCK, Items.QUARTZ_SLAB);
+        cuttingFromSlabStone(consumer, Items.CHISELED_STONE_BRICKS, Items.STONE_BRICK_SLAB);
     }
 
     private static void cuttingFromSlabStone(Consumer<FinishedRecipe> consumer,ItemLike stone,ItemLike slab) {
@@ -361,26 +396,27 @@ public class ModCuttingRecipes {
     }
 
     private static void cuttingWood(Consumer<FinishedRecipe> consumer) {
-        cuttingFromWood(consumer, Items.OAK_PLANKS, Items.OAK_STAIRS, Items.OAK_SLAB, Items.OAK_FENCE_GATE, Items.OAK_FENCE, Items.OAK_BUTTON, Items.OAK_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.SPRUCE_PLANKS, Items.SPRUCE_STAIRS, Items.SPRUCE_SLAB, Items.SPRUCE_FENCE_GATE, Items.SPRUCE_FENCE, Items.SPRUCE_BUTTON, Items.SPRUCE_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.BIRCH_PLANKS, Items.BIRCH_STAIRS, Items.BIRCH_SLAB, Items.BIRCH_FENCE_GATE, Items.BIRCH_FENCE, Items.BIRCH_BUTTON, Items.BIRCH_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.CHERRY_PLANKS, Items.CHERRY_STAIRS, Items.CHERRY_SLAB, Items.CHERRY_FENCE_GATE, Items.CHERRY_FENCE, Items.CHERRY_BUTTON, Items.CHERRY_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.ACACIA_PLANKS, Items.ACACIA_STAIRS, Items.ACACIA_SLAB, Items.ACACIA_FENCE_GATE, Items.ACACIA_FENCE, Items.ACACIA_BUTTON, Items.ACACIA_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.DARK_OAK_PLANKS, Items.DARK_OAK_STAIRS, Items.DARK_OAK_SLAB, Items.DARK_OAK_FENCE_GATE, Items.DARK_OAK_FENCE, Items.DARK_OAK_BUTTON, Items.DARK_OAK_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.JUNGLE_PLANKS, Items.JUNGLE_STAIRS, Items.JUNGLE_SLAB, Items.JUNGLE_FENCE_GATE, Items.JUNGLE_FENCE, Items.JUNGLE_BUTTON, Items.JUNGLE_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.MANGROVE_PLANKS, Items.MANGROVE_STAIRS, Items.MANGROVE_SLAB, Items.MANGROVE_FENCE_GATE, Items.MANGROVE_FENCE, Items.MANGROVE_BUTTON, Items.MANGROVE_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.WARPED_PLANKS, Items.WARPED_STAIRS, Items.WARPED_SLAB, Items.WARPED_FENCE_GATE, Items.WARPED_FENCE, Items.WARPED_BUTTON, Items.WARPED_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.CRIMSON_PLANKS, Items.CRIMSON_STAIRS, Items.CRIMSON_SLAB, Items.CRIMSON_FENCE_GATE, Items.CRIMSON_FENCE, Items.CRIMSON_BUTTON, Items.CRIMSON_PRESSURE_PLATE);
-        cuttingFromWood(consumer, Items.BAMBOO_PLANKS, Items.BAMBOO_STAIRS, Items.BAMBOO_SLAB, Items.BAMBOO_FENCE_GATE, Items.BAMBOO_FENCE, Items.BAMBOO_BUTTON, Items.BAMBOO_PRESSURE_PLATE);
+        cuttingFromWood(consumer, Items.OAK_PLANKS, Items.OAK_STAIRS, Items.OAK_SLAB, Items.OAK_FENCE_GATE, Items.OAK_FENCE, Items.OAK_BUTTON, Items.OAK_PRESSURE_PLATE, Items.STRIPPED_OAK_LOG, Items.STRIPPED_OAK_WOOD);
+        cuttingFromWood(consumer, Items.SPRUCE_PLANKS, Items.SPRUCE_STAIRS, Items.SPRUCE_SLAB, Items.SPRUCE_FENCE_GATE, Items.SPRUCE_FENCE, Items.SPRUCE_BUTTON, Items.SPRUCE_PRESSURE_PLATE, Items.STRIPPED_SPRUCE_LOG, Items.STRIPPED_SPRUCE_WOOD);
+        cuttingFromWood(consumer, Items.BIRCH_PLANKS, Items.BIRCH_STAIRS, Items.BIRCH_SLAB, Items.BIRCH_FENCE_GATE, Items.BIRCH_FENCE, Items.BIRCH_BUTTON, Items.BIRCH_PRESSURE_PLATE, Items.STRIPPED_BIRCH_LOG, Items.STRIPPED_BIRCH_WOOD);
+        cuttingFromWood(consumer, Items.CHERRY_PLANKS, Items.CHERRY_STAIRS, Items.CHERRY_SLAB, Items.CHERRY_FENCE_GATE, Items.CHERRY_FENCE, Items.CHERRY_BUTTON, Items.CHERRY_PRESSURE_PLATE, Items.STRIPPED_CHERRY_LOG, Items.STRIPPED_CHERRY_WOOD);
+        cuttingFromWood(consumer, Items.ACACIA_PLANKS, Items.ACACIA_STAIRS, Items.ACACIA_SLAB, Items.ACACIA_FENCE_GATE, Items.ACACIA_FENCE, Items.ACACIA_BUTTON, Items.ACACIA_PRESSURE_PLATE, Items.STRIPPED_ACACIA_LOG, Items.STRIPPED_ACACIA_WOOD);
+        cuttingFromWood(consumer, Items.DARK_OAK_PLANKS, Items.DARK_OAK_STAIRS, Items.DARK_OAK_SLAB, Items.DARK_OAK_FENCE_GATE, Items.DARK_OAK_FENCE, Items.DARK_OAK_BUTTON, Items.DARK_OAK_PRESSURE_PLATE, Items.STRIPPED_DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_WOOD);
+        cuttingFromWood(consumer, Items.JUNGLE_PLANKS, Items.JUNGLE_STAIRS, Items.JUNGLE_SLAB, Items.JUNGLE_FENCE_GATE, Items.JUNGLE_FENCE, Items.JUNGLE_BUTTON, Items.JUNGLE_PRESSURE_PLATE, Items.STRIPPED_JUNGLE_LOG, Items.STRIPPED_JUNGLE_WOOD);
+        cuttingFromWood(consumer, Items.MANGROVE_PLANKS, Items.MANGROVE_STAIRS, Items.MANGROVE_SLAB, Items.MANGROVE_FENCE_GATE, Items.MANGROVE_FENCE, Items.MANGROVE_BUTTON, Items.MANGROVE_PRESSURE_PLATE, Items.STRIPPED_MANGROVE_LOG, Items.STRIPPED_MANGROVE_WOOD);
+        cuttingFromWood(consumer, Items.WARPED_PLANKS, Items.WARPED_STAIRS, Items.WARPED_SLAB, Items.WARPED_FENCE_GATE, Items.WARPED_FENCE, Items.WARPED_BUTTON, Items.WARPED_PRESSURE_PLATE, Items.STRIPPED_WARPED_STEM, Items.STRIPPED_WARPED_HYPHAE);
+        cuttingFromWood(consumer, Items.CRIMSON_PLANKS, Items.CRIMSON_STAIRS, Items.CRIMSON_SLAB, Items.CRIMSON_FENCE_GATE, Items.CRIMSON_FENCE, Items.CRIMSON_BUTTON, Items.CRIMSON_PRESSURE_PLATE, Items.STRIPPED_CRIMSON_STEM, Items.STRIPPED_CRIMSON_HYPHAE);
     }
 
-    private static void cuttingFromWood(Consumer<FinishedRecipe> consumer,ItemLike planks,ItemLike stairs,ItemLike slab,ItemLike fence_gate,ItemLike fence,ItemLike button,ItemLike pressure_plate) {
+    private static void cuttingFromWood(Consumer<FinishedRecipe> consumer,ItemLike planks,ItemLike stairs,ItemLike slab,ItemLike fence_gate,ItemLike fence,ItemLike button,ItemLike pressure_plate,ItemLike stripped_log,ItemLike stripped_wood) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stairs}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{planks}), new ToolActionIngredient(ToolActions.AXE_DIG), slab,2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{fence_gate}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{fence}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{button}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{pressure_plate}), new ToolActionIngredient(ToolActions.AXE_DIG), planks).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stripped_log}), new ToolActionIngredient(ToolActions.AXE_DIG), planks,4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{stripped_wood}), new ToolActionIngredient(ToolActions.AXE_DIG), planks,4).build(consumer);
     }
 
     private static void cuttingStoneButton(Consumer<FinishedRecipe> consumer) {
@@ -557,5 +593,38 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{purple}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), standart).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{magenta}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), standart).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{pink}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), standart).build(consumer);
+    }
+
+    private static void cuttingBoat(Consumer<FinishedRecipe> consumer) {
+        cuttingFromBoat(consumer, Items.OAK_PLANKS, Items.OAK_BOAT, Items.OAK_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.SPRUCE_PLANKS, Items.SPRUCE_BOAT, Items.SPRUCE_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.BIRCH_PLANKS, Items.BIRCH_BOAT, Items.BIRCH_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.JUNGLE_PLANKS, Items.JUNGLE_BOAT, Items.JUNGLE_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.ACACIA_PLANKS, Items.ACACIA_BOAT, Items.ACACIA_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.DARK_OAK_PLANKS, Items.DARK_OAK_BOAT, Items.DARK_OAK_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.MANGROVE_PLANKS, Items.MANGROVE_BOAT, Items.MANGROVE_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.CHERRY_PLANKS, Items.CHERRY_BOAT, Items.CHERRY_CHEST_BOAT);
+        cuttingFromBoat(consumer, Items.BAMBOO_PLANKS, Items.BAMBOO_RAFT, Items.BAMBOO_CHEST_RAFT);
+    }
+
+    private static void cuttingFromBoat(Consumer<FinishedRecipe> consumer,ItemLike planks,ItemLike boat,ItemLike boat_with_chest) {
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{boat}), new ToolActionIngredient(ToolActions.AXE_DIG), planks,5).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{boat_with_chest}), new ToolActionIngredient(ToolActions.AXE_DIG), planks,5).addResult((ItemLike)Items.CHEST).build(consumer);
+    }
+
+    private static void cuttingOre(Consumer<FinishedRecipe> consumer) {
+        cuttingFromOre(consumer, Items.COAL, Items.COAL_ORE, Items.DEEPSLATE_COAL_ORE);
+        cuttingFromOre(consumer, Items.RAW_IRON, Items.IRON_ORE, Items.DEEPSLATE_IRON_ORE);
+        cuttingFromOre(consumer, Items.RAW_COPPER, Items.COPPER_ORE, Items.DEEPSLATE_COPPER_ORE);
+        cuttingFromOre(consumer, Items.RAW_GOLD, Items.GOLD_ORE, Items.DEEPSLATE_GOLD_ORE);
+        cuttingFromOre(consumer, Items.REDSTONE, Items.REDSTONE_ORE, Items.DEEPSLATE_REDSTONE_ORE);
+        cuttingFromOre(consumer, Items.EMERALD, Items.EMERALD_ORE, Items.DEEPSLATE_EMERALD_ORE);
+        cuttingFromOre(consumer, Items.LAPIS_LAZULI, Items.LAPIS_ORE, Items.DEEPSLATE_LAPIS_ORE);
+        cuttingFromOre(consumer, Items.DIAMOND, Items.DIAMOND_ORE, Items.DEEPSLATE_DIAMOND_ORE);
+    }
+
+    private static void cuttingFromOre(Consumer<FinishedRecipe> consumer,ItemLike ingredients,ItemLike ore,ItemLike deepslate_ore) {
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{ore}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), ingredients).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{deepslate_ore}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), ingredients).build(consumer);
     }
 }
