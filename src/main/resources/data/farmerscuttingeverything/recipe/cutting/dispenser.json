@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:dispenser"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 7,
+        "id": "minecraft:cobblestone"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:redstone"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:bow"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "pickaxe_dig"
+  }
+}

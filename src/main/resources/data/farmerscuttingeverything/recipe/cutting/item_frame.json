@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:item_frame"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 8,
+        "id": "minecraft:stick"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:leather"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  }
+}

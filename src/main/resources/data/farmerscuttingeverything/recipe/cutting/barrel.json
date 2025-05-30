@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:barrel"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 6,
+        "id": "minecraft:spruce_planks"
+      }
+    },
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:spruce_slab"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  }
+}

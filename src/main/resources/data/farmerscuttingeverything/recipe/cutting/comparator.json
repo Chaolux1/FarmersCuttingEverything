@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:comparator"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 3,
+        "id": "minecraft:stone"
+      }
+    },
+    {
+      "item": {
+        "count": 3,
+        "id": "minecraft:redstone_torch"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:quartz"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "pickaxe_dig"
+  }
+}

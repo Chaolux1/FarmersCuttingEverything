@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:observer"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 6,
+        "id": "minecraft:cobblestone"
+      }
+    },
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:redstone"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:quartz"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "pickaxe_dig"
+  }
+}

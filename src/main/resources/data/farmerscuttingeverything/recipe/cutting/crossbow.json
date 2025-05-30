@@ -1,0 +1,39 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:crossbow"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 3,
+        "id": "minecraft:stick"
+      }
+    },
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:string"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:iron_ingot"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "minecraft:tripwire_hook"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  }
+}

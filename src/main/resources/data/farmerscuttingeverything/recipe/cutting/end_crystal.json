@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:end_crystal"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 7,
+        "id": "minecraft:glass"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:ender_eye"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:ghast_tear"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

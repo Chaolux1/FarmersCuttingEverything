@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:spider_eye"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:brown_mushroom"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:sugar"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

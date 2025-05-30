@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:beacon"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:nether_star"
+      }
+    },
+    {
+      "item": {
+        "count": 5,
+        "id": "minecraft:glass"
+      }
+    },
+    {
+      "item": {
+        "count": 3,
+        "id": "minecraft:obsidian"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "pickaxe_dig"
+  }
+}

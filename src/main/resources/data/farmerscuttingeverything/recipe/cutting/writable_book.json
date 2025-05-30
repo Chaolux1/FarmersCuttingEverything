@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:writable_book"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:book"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:ink_sac"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:feather"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

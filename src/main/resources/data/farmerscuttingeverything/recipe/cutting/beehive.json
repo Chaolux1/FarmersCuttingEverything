@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:beehive"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 6,
+        "id": "minecraft:oak_planks"
+      }
+    },
+    {
+      "chance": 0.75,
+      "item": {
+        "count": 3,
+        "id": "minecraft:honeycomb"
+      }
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  }
+}
