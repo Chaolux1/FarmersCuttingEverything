@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:wolf_armor"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 6,
+        "id": "minecraft:armadillo_scute"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

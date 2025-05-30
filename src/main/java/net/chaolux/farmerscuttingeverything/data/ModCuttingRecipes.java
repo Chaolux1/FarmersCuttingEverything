@@ -33,6 +33,7 @@ public class ModCuttingRecipes {
         cuttingArmor(output);
         cuttingBoat(output);
         cuttingOre(output);
+        cuttingCopper(output);
     }
 
     private static void cuttingPickaxe(RecipeOutput output) {
@@ -179,6 +180,10 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PRISMARINE_WALL}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.PRISMARINE).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DARK_PRISMARINE_STAIRS}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.DARK_PRISMARINE).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PURPUR_STAIRS}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.PURPUR_BLOCK).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.CRAFTER}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.CRAFTING_TABLE).addResult((ItemLike)Items.DROPPER).addResult((ItemLike)Items.IRON_INGOT,5).addResult((ItemLike)Items.REDSTONE,2).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HEAVY_CORE}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.IRON_BLOCK).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.OMINOUS_TRIAL_KEY}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.OXIDIZED_COPPER).addResult((ItemLike)Items.POLISHED_TUFF).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TRIAL_KEY}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.COPPER_BLOCK).addResult((ItemLike)Items.POLISHED_TUFF).build(output);
     }
 
     private static void cuttingAxe(RecipeOutput output) {
@@ -280,6 +285,8 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TIPPED_ARROW}), Ingredient.of(CommonTags.TOOLS_KNIFE), Items.ARROW).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HONEYCOMB_BLOCK}), Ingredient.of(CommonTags.TOOLS_KNIFE), Items.HONEYCOMB,4).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GLOW_INK_SAC}), Ingredient.of(CommonTags.TOOLS_KNIFE), Items.BLACK_DYE,2).addResultWithChance(Items.GLOWSTONE_DUST,0.1F).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BREEZE_ROD}), Ingredient.of(CommonTags.TOOLS_KNIFE), Items.WIND_CHARGE, 5).addResultWithChance(Items.WIND_CHARGE,0.5F).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WOLF_ARMOR}), Ingredient.of(CommonTags.TOOLS_KNIFE), Items.ARMADILLO_SCUTE, 6).build(output);
     }
 
     private static void cuttingTools(RecipeOutput output) {
@@ -313,7 +320,9 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHERITE_AXE}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.NETHERITE_INGOT).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHERITE_SHOVEL}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.NETHERITE_INGOT).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHERITE_HOE}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.NETHERITE_INGOT).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MACE}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.HEAVY_CORE).addResult((ItemLike)Items.BREEZE_ROD).build(output);
     }
+
     private static void cuttingArmor(RecipeOutput output) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.CHAINMAIL_HELMET}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.CHAIN,2).addResultWithChance(Items.CHAIN,0.75F).addResultWithChance(Items.CHAIN,0.5F).addResultWithChance(Items.CHAIN,0.25F).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.CHAINMAIL_CHESTPLATE}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.CHAIN,5).addResultWithChance(Items.CHAIN,0.75F).addResultWithChance(Items.CHAIN,0.5F).addResultWithChance(Items.CHAIN,0.25F).build(output);
@@ -355,6 +364,10 @@ public class ModCuttingRecipes {
         cuttingFromStone(output, Items.COBBLED_DEEPSLATE, Items.COBBLED_DEEPSLATE_STAIRS, Items.COBBLED_DEEPSLATE_SLAB, Items.COBBLED_DEEPSLATE_WALL);
         cuttingFromStone(output, Items.DEEPSLATE_TILES, Items.DEEPSLATE_TILE_STAIRS, Items.DEEPSLATE_TILE_SLAB, Items.DEEPSLATE_TILE_WALL);
         cuttingFromStone(output, Items.BRICKS, Items.BRICK_STAIRS, Items.BRICK_SLAB, Items.BRICK_WALL);
+        cuttingFromStone(output, Items.TUFF, Items.TUFF_STAIRS, Items.TUFF_SLAB, Items.TUFF_WALL);
+        cuttingFromStone(output, Items.POLISHED_TUFF, Items.POLISHED_TUFF_STAIRS, Items.POLISHED_TUFF_SLAB, Items.POLISHED_TUFF_WALL);
+        cuttingFromStone(output, Items.TUFF_BRICKS, Items.TUFF_BRICK_STAIRS, Items.TUFF_BRICK_SLAB, Items.TUFF_BRICK_WALL);
+
     }
 
     private static void cuttingFromStone(RecipeOutput output,ItemLike stone,ItemLike stairs,ItemLike slab,ItemLike wall) {
@@ -387,6 +400,12 @@ public class ModCuttingRecipes {
         cuttingFromSlabStone(output, Items.CUT_RED_SANDSTONE, Items.CUT_RED_SANDSTONE_SLAB);
         cuttingFromSlabStone(output, Items.CHISELED_QUARTZ_BLOCK, Items.QUARTZ_SLAB);
         cuttingFromSlabStone(output, Items.CHISELED_STONE_BRICKS, Items.STONE_BRICK_SLAB);
+        cuttingFromSlabStone(output, Items.CHISELED_TUFF, Items.TUFF_SLAB);
+        cuttingFromSlabStone(output, Items.CHISELED_TUFF_BRICKS, Items.TUFF_BRICK_SLAB);
+        cuttingFromSlabStone(output, Items.CHISELED_COPPER, Items.CUT_COPPER_SLAB);
+        cuttingFromSlabStone(output, Items.EXPOSED_CHISELED_COPPER, Items.EXPOSED_CUT_COPPER_SLAB);
+        cuttingFromSlabStone(output, Items.WEATHERED_CHISELED_COPPER, Items.WEATHERED_CUT_COPPER_SLAB);
+        cuttingFromSlabStone(output, Items.OXIDIZED_CHISELED_COPPER, Items.OXIDIZED_CUT_COPPER_SLAB);
     }
 
     private static void cuttingFromSlabStone(RecipeOutput output,ItemLike stone,ItemLike slab) {
@@ -624,5 +643,19 @@ public class ModCuttingRecipes {
     private static void cuttingFromOre(RecipeOutput output,ItemLike ingredients,ItemLike ore,ItemLike deepslate_ore) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{ore}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), ingredients).build(output);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{deepslate_ore}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), ingredients).build(output);
+    }
+
+    private static void cuttingCopper(RecipeOutput output) {
+        cuttingFromCopper(output, Items.COPPER_BLOCK, Items.COPPER_GRATE, Items.COPPER_DOOR, Items.COPPER_TRAPDOOR, Items.COPPER_BULB);
+        cuttingFromCopper(output, Items.EXPOSED_COPPER, Items.EXPOSED_COPPER_GRATE, Items.EXPOSED_COPPER_DOOR, Items.EXPOSED_COPPER_TRAPDOOR, Items.EXPOSED_COPPER_BULB);
+        cuttingFromCopper(output, Items.WEATHERED_COPPER, Items.WEATHERED_COPPER_GRATE, Items.WEATHERED_COPPER_DOOR, Items.WEATHERED_COPPER_TRAPDOOR, Items.WEATHERED_COPPER_BULB);
+        cuttingFromCopper(output, Items.OXIDIZED_COPPER, Items.OXIDIZED_COPPER_GRATE, Items.OXIDIZED_COPPER_DOOR, Items.OXIDIZED_COPPER_TRAPDOOR, Items.OXIDIZED_COPPER_BULB);
+    }
+
+    private static void cuttingFromCopper(RecipeOutput output,ItemLike block,ItemLike grate,ItemLike door,ItemLike trapdoor,ItemLike bulb) {
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{grate}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), block).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{trapdoor}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.COPPER_INGOT,3).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{door}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), Items.COPPER_INGOT,2).build(output);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{bulb}), (new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG)).toVanilla(), block).addResultWithChance(Items.REDSTONE,0.25F).addResultWithChance(Items.BLAZE_POWDER,0.5F).build(output);
     }
 }
