@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:tropical_fish_bucket"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:water_bucket"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:tropical_fish"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/fishing_rod"
+  }
+}

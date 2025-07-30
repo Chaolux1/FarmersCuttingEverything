@@ -2,14 +2,14 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:nether_wart_block"
+      "item": "minecraft:weeping_vines"
     }
   ],
   "result": [
     {
       "item": {
-        "count": 9,
-        "id": "minecraft:nether_wart"
+        "count": 1,
+        "id": "minecraft:red_dye"
       }
     }
   ],

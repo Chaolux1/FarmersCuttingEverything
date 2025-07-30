@@ -2,18 +2,18 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:nether_wart_block"
+      "item": "minecraft:zombie_head"
     }
   ],
   "result": [
     {
       "item": {
-        "count": 9,
-        "id": "minecraft:nether_wart"
+        "count": 1,
+        "id": "minecraft:skeleton_skull"
       }
     }
   ],
   "tool": {
-    "tag": "c:tools/knife"
+    "item": "minecraft:clock"
   }
 }

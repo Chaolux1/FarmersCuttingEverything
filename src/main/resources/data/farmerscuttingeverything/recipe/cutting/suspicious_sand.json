@@ -1,0 +1,40 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:suspicious_sand"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:sand"
+      }
+    },
+    {
+      "chance": 0.09,
+      "item": {
+        "count": 1,
+        "id": "minecraft:coal"
+      }
+    },
+    {
+      "chance": 0.09,
+      "item": {
+        "count": 1,
+        "id": "minecraft:emerald"
+      }
+    },
+    {
+      "chance": 0.09,
+      "item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      }
+    }
+  ],
+  "tool": {
+    "item": "minecraft:brush"
+  }
+}

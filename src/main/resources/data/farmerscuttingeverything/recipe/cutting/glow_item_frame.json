@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_item_frame"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:item_frame"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:glow_ink_sac"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/shear"
+  }
+}

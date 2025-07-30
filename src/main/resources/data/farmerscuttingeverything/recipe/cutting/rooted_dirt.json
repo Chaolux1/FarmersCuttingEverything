@@ -2,19 +2,19 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:decorated_pot"
+      "item": "minecraft:rooted_dirt"
     }
   ],
   "result": [
     {
       "item": {
-        "count": 4,
-        "id": "minecraft:brick"
+        "count": 1,
+        "id": "minecraft:dirt"
       }
     }
   ],
   "tool": {
     "type": "farmersdelight:item_ability",
-    "action": "pickaxe_dig"
+    "action": "shovel_dig"
   }
 }

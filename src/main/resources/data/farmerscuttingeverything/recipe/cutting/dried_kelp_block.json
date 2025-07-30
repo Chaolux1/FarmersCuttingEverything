@@ -2,18 +2,18 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:nether_wart_block"
+      "item": "minecraft:dried_kelp_block"
     }
   ],
   "result": [
     {
       "item": {
         "count": 9,
-        "id": "minecraft:nether_wart"
+        "id": "minecraft:dried_kelp"
       }
     }
   ],
   "tool": {
-    "tag": "c:tools/knife"
+    "tag": "c:tools/shear"
   }
 }

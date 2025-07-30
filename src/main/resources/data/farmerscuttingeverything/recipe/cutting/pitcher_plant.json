@@ -2,19 +2,18 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:decorated_pot"
+      "item": "minecraft:pitcher_plant"
     }
   ],
   "result": [
     {
       "item": {
         "count": 4,
-        "id": "minecraft:brick"
+        "id": "minecraft:cyan_dye"
       }
     }
   ],
   "tool": {
-    "type": "farmersdelight:item_ability",
-    "action": "pickaxe_dig"
+    "tag": "c:tools/knife"
   }
 }

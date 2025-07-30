@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:cod_bucket"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:water_bucket"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "minecraft:cod"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/fishing_rod"
+  }
+}
