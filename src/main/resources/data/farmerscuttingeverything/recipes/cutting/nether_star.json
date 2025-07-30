@@ -2,17 +2,16 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:flower_pot"
+      "item": "minecraft:nether_star"
     }
   ],
   "result": [
     {
       "count": 3,
-      "item": "minecraft:brick"
+      "item": "minecraft:wither_skeleton_skull"
     }
   ],
   "tool": {
-    "type": "farmersdelight:tool_action",
-    "action": "pickaxe_dig"
+    "item": "minecraft:clock"
   }
 }

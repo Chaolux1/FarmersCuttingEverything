@@ -2,13 +2,12 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:nether_wart_block"
+      "item": "minecraft:seagrass"
     }
   ],
   "result": [
     {
-      "count": 9,
-      "item": "minecraft:nether_wart"
+      "item": "minecraft:lime_dye"
     }
   ],
   "tool": {

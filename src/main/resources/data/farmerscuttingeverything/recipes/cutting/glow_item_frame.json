@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_item_frame"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:item_frame"
+    },
+    {
+      "item": "minecraft:glow_ink_sac"
+    }
+  ],
+  "tool": {
+    "tag": "forge:shears"
+  }
+}

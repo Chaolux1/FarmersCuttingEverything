@@ -2,13 +2,13 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:nether_wart_block"
+      "item": "minecraft:pitcher_plant"
     }
   ],
   "result": [
     {
-      "count": 9,
-      "item": "minecraft:nether_wart"
+      "count": 4,
+      "item": "minecraft:cyan_dye"
     }
   ],
   "tool": {

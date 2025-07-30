@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:player_head"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:zombie_head"
+    }
+  ],
+  "tool": {
+    "item": "minecraft:clock"
+  }
+}

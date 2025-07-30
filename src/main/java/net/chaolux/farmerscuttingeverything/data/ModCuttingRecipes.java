@@ -35,6 +35,9 @@ public class ModCuttingRecipes {
         cuttingArmor(consumer);
         cuttingBoat(consumer);
         cuttingOre(consumer);
+        cuttingFishingRod(consumer);
+        cuttingBrush(consumer);
+        cuttingClock(consumer);
     }
 
     private static void cuttingPickaxe(Consumer<FinishedRecipe> consumer) {
@@ -101,8 +104,8 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BEACON}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.NETHER_STAR).addResult((ItemLike)Items.GLASS,5).addResult((ItemLike)Items.OBSIDIAN,3).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LIGHTNING_ROD}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.COPPER_INGOT, 3).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ENCHANTING_TABLE}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.BOOK).addResult((ItemLike)Items.OBSIDIAN,4).addResult((ItemLike)Items.DIAMOND,2).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DECORATED_POT}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.BRICKS, 4).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.FLOWER_POT}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.BRICKS, 3).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DECORATED_POT}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.BRICK, 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.FLOWER_POT}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.BRICK, 3).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.IRON_INGOT}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.IRON_NUGGET, 9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.BUCKET}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.IRON_INGOT, 3).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MINECART}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.IRON_INGOT, 5).build(consumer);
@@ -181,6 +184,7 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PRISMARINE_WALL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.PRISMARINE).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DARK_PRISMARINE_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.DARK_PRISMARINE).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PURPUR_STAIRS}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.PURPUR_BLOCK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SKELETON_SKULL}), new ToolActionIngredient(ToolActions.PICKAXE_DIG), Items.BONE_BLOCK).addResult((ItemLike)Items.BONE,4).build(consumer);
     }
 
     private static void cuttingAxe(Consumer<FinishedRecipe> consumer) {
@@ -235,12 +239,14 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GRASS_BLOCK}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PODZOL}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.MYCELIUM}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ROOTED_DIRT}), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.DIRT).build(consumer);
     }
 
     private static void cuttingShears(Consumer<FinishedRecipe> consumer) {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PUMPKIN}), Ingredient.of(Tags.Items.SHEARS), Items.CARVED_PUMPKIN).addResultWithChance(Items.PUMPKIN_SEEDS,0.5F,2).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.COBWEB}), Ingredient.of(Tags.Items.SHEARS), Items.STRING).addResultWithChance(Items.STRING,0.75F).build(consumer);
-
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GLOW_ITEM_FRAME}), Ingredient.of(Tags.Items.SHEARS), Items.ITEM_FRAME).addResult((ItemLike)Items.GLOW_INK_SAC).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DRIED_KELP_BLOCK}), Ingredient.of(Tags.Items.SHEARS), Items.DRIED_KELP,9).build(consumer);
     }
 
     private static void cuttingKnife(Consumer<FinishedRecipe> consumer) {
@@ -259,7 +265,7 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HONEYCOMB}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.HONEYCOMB, 4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HAY_BLOCK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.WHEAT, 9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WARPED_WART_BLOCK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.WARPED_FUNGUS).build(consumer);
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHER_WART_BLOCK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.CRIMSON_FUNGUS).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHER_WART_BLOCK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.NETHER_WART,9).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.END_CRYSTAL}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.GLASS, 7).addResult((ItemLike)Items.ENDER_EYE).addResult((ItemLike)Items.GHAST_TEAR).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ENDER_EYE}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.ENDER_PEARL).addResult((ItemLike)Items.BLAZE_POWDER).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WRITABLE_BOOK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.BOOK).addResult((ItemLike)Items.INK_SAC).addResult((ItemLike)Items.FEATHER).build(consumer);
@@ -282,6 +288,36 @@ public class ModCuttingRecipes {
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TIPPED_ARROW}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.ARROW).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.HONEYCOMB_BLOCK}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.HONEYCOMB,4).build(consumer);
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.GLOW_INK_SAC}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.BLACK_DYE,2).addResultWithChance(Items.GLOWSTONE_DUST,0.1F).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.COCOA_BEANS}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.BROWN_DYE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.LILAC}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.MAGENTA_DYE, 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ROSE_BUSH}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.RED_DYE, 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PITCHER_PLANT}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.CYAN_DYE, 4).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TWISTING_VINES}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.CYAN_DYE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WEEPING_VINES}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.RED_DYE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHER_WART}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.RED_DYE).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.DEAD_BUSH}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.STICK).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SEAGRASS}), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.LIME_DYE).build(consumer);
+    }
+
+    private static void cuttingFishingRod(Consumer<FinishedRecipe> consumer) {
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.COD_BUCKET}), Ingredient.of(Tags.Items.TOOLS_FISHING_RODS), Items.WATER_BUCKET).addResult((ItemLike)Items.COD).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SALMON_BUCKET}), Ingredient.of(Tags.Items.TOOLS_FISHING_RODS), Items.WATER_BUCKET).addResult((ItemLike)Items.SALMON).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.TROPICAL_FISH_BUCKET}), Ingredient.of(Tags.Items.TOOLS_FISHING_RODS), Items.WATER_BUCKET).addResult((ItemLike)Items.TROPICAL_FISH).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PUFFERFISH_BUCKET}), Ingredient.of(Tags.Items.TOOLS_FISHING_RODS), Items.WATER_BUCKET).addResult((ItemLike)Items.PUFFERFISH).build(consumer);
+    }
+
+    private static void cuttingBrush(Consumer<FinishedRecipe> consumer) {
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SUSPICIOUS_SAND}), Ingredient.of(Items.BRUSH), Items.SAND).addResultWithChance(Items.COAL,0.09F).addResultWithChance(Items.EMERALD,0.09F).addResultWithChance(Items.BRICK,0.09F).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SUSPICIOUS_GRAVEL}), Ingredient.of(Items.BRUSH), Items.GRAVEL).addResultWithChance(Items.COAL,0.09F).addResultWithChance(Items.EMERALD,0.09F).addResultWithChance(Items.BRICK,0.09F).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.SCULK}), Ingredient.of(Items.BRUSH), Items.SCULK_VEIN,3).build(consumer);
+
+    }
+
+    private static void cuttingClock(Consumer<FinishedRecipe> consumer) {
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.NETHER_STAR}), Ingredient.of(Items.CLOCK), Items.WITHER_SKELETON_SKULL,3).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.WITHER_SKELETON_SKULL}), Ingredient.of(Items.CLOCK), Items.SKELETON_SKULL).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.PLAYER_HEAD}), Ingredient.of(Items.CLOCK), Items.ZOMBIE_HEAD).build(consumer);
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(new ItemLike[]{Items.ZOMBIE_HEAD}), Ingredient.of(Items.CLOCK), Items.SKELETON_SKULL).build(consumer);
     }
 
     private static void cuttingTools(Consumer<FinishedRecipe> consumer) {

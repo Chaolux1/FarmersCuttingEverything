@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:pufferfish_bucket"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/fishing_rods"
+  }
+}

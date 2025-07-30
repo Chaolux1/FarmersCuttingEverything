@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:suspicious_gravel"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "chance": 0.09,
+      "item": "minecraft:coal"
+    },
+    {
+      "chance": 0.09,
+      "item": "minecraft:emerald"
+    },
+    {
+      "chance": 0.09,
+      "item": "minecraft:brick"
+    }
+  ],
+  "tool": {
+    "item": "minecraft:brush"
+  }
+}

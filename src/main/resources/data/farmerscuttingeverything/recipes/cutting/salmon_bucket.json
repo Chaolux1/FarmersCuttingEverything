@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:salmon_bucket"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:salmon"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/fishing_rods"
+  }
+}

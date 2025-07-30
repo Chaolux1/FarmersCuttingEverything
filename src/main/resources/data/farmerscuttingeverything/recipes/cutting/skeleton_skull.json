@@ -2,13 +2,16 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:decorated_pot"
+      "item": "minecraft:skeleton_skull"
     }
   ],
   "result": [
     {
+      "item": "minecraft:bone_block"
+    },
+    {
       "count": 4,
-      "item": "minecraft:brick"
+      "item": "minecraft:bone"
     }
   ],
   "tool": {
