@@ -1,22 +1,14 @@
 # Farmer's Cutting Everything
 
-## 📜 Essence
-
-Farmer's Cutting Everything expands the cutting board recipes from Farmer’s Delight, letting you break down almost any item or block into parts or ingredients.
-
-## 🎯 Features
-
-- Cut down items and blocks into components using the cutting board.
-- Works even for items without crafting recipes.
-- Helpful if you accidentally crafted 64 of something you didn’t mean to.
-- Designed to respect balance — no magical undo, just logical breakdowns.
+Farmer's Cutting Everything is an addon for Farmer’s Delight that massively expands Cutting Board recipes. Now, almost anything can be taken apart back into ingredients or smaller parts. And not only with the usual axe, shovel, or knife — sometimes you might need something like a clock. Sometimes time literally helps you take things apart.
 
 ## 💻 Development
 
-If you wanna improve something in the code, feel free to make a pull request — i’ll gladly check it out.  
-Found a bug or smth missing? open an issue, no stress  
-i’ll be happy to fix it — it matters to me that this mod gives you stable gameplay and good vibes.  
-Thx for any help — together we can do — a lot :)
+If you wanna change something in the code, feel free to make a pull request. I’ll check it when i can.
+Found a bug? Something missing? Open an issue. Even if it’s just some small weird thing you noticed.
+I do care about keeping the mod stable, so reports actually help a lot.
+Code, bug reports, random fixes... all appreciated.
+Sometimes one tiny thing saves me from staring at the same problem for way too long :)
 
 ## 🔗 Links
 
